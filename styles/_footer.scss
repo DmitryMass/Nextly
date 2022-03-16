@@ -1,0 +1,17 @@
+.footer {
+  background: $dark;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-right {
+    text-align: center;
+  }
+  &-p {
+    font-size: $sm-12;
+    line-height: $lh-20;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    color: #e0e0e0;
+  }
+}

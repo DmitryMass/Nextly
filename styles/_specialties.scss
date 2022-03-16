@@ -1,0 +1,39 @@
+.specialties {
+  padding: 90px 0;
+  @media screen and (max-width: 576px) {
+    padding: 50px 0;
+  }
+  &-title {
+    margin: 0 auto;
+    max-width: 710px;
+    text-align: center;
+    padding-bottom: 100px;
+    @media screen and (max-width: 576px) {
+      padding-bottom: 50px;
+    }
+    & > .h2 {
+      margin-bottom: 35px;
+    }
+  }
+  &-directions {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(110px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, minmax(110px, 1fr));
+    }
+  }
+}
+.directions {
+  max-width: 105px;
+  display: grid;
+  justify-items: center;
+}
+.js {
+  font-size: $md-20;
+  line-height: $lh-45p;
+  font-weight: 500;
+  text-align: center;
+}

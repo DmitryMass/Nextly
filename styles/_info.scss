@@ -1,0 +1,64 @@
+.article {
+  &-info {
+    background: $black;
+    padding: 120px 0;
+    @media screen and (max-width: 768px) {
+      padding: 60px 0;
+    }
+  }
+  &-logo {
+    margin: 0 auto;
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+}
+.info {
+  &-follow,
+  &-uk,
+  &-brazil {
+    max-width: 180px;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  &-uk,
+  &-contact {
+    max-width: 160px;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      max-width: 180px;
+    }
+  }
+  &-href {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    &__top {
+      display: none;
+      position: relative;
+      z-index: 1;
+      @media screen and (max-width: 768px) {
+        display: inline-block;
+      }
+    }
+  }
+  &-logo {
+    font-size: 20px;
+    color: $white;
+    margin: 0 5px;
+  }
+  &-links {
+    margin-top: 27px;
+  }
+  &-nextly {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,184 @@
+// Font size
+$lg-46: 46px;
+$lg-40: 40px;
+$md-25: 25px;
+$md-24: 24px;
+$md-22: 22px;
+$md-20: 20px;
+$sm-18: 18px;
+$sm-16: 16px;
+$sm-14: 14px;
+$sm-12: 12px;
+
+// Line-h
+$lh-45p: 45px;
+$lh-20: 20px;
+$lh-14: 14px;
+$lh-150: 150%;
+$lh-135: 135%;
+// Colors
+$grey: #8c8c8c;
+$violet: #6856c9;
+$orange: #f24423;
+$dark-grey: #3c4147;
+$dark: #161719;
+$white: white;
+$black: black;
+$dark-blue: #003166;
+$dark-bgc: linear-gradient(180deg, rgba(22, 23, 25, 0.75) 0%, #000000 100%);
+$blue-bgc: linear-gradient(273.36deg, #003166 0%, #007aff 100%);
+
+// mixin if need (use bootstrap styles)
+
+// @mixin container($width) {
+//   max-width: $width;
+//   padding: 0 15px;
+//   margin: 0 auto;
+//   box-sizing: content-box;
+// }
+.container {
+  @media screen and (min-width: 1200px) {
+    max-width: 1080px;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0 25px;
+  }
+}
+// flexbox
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  //   flex-wrap: wrap;
+}
+
+.flex-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.flex-contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-content: center;
+    gap: 60px;
+  }
+}
+// Selectors
+.h1 {
+  font-size: $lg-46;
+  line-height: $lh-135;
+  font-weight: 500;
+  color: $white;
+}
+.h2 {
+  font-size: $lg-40;
+  line-height: $lh-45p;
+  font-weight: 700;
+  color: $black;
+}
+.h4 {
+  font-size: $sm-16;
+  line-height: $lh-20;
+  font-weight: 700;
+  color: $white;
+}
+.ceo-about {
+  font-weight: 700;
+  font-size: $sm-18;
+  line-height: $lh-135;
+  color: $grey;
+}
+.lang-btn {
+  font-family: "Rubik", sans-serif;
+  font-size: $sm-12;
+  line-height: $lh-14;
+  color: $white;
+  padding: 6px 12px;
+  border-radius: 50px;
+  border: 1px solid $white;
+  display: inline-block;
+}
+.p-info {
+  font-size: $sm-14;
+  line-height: $lh-20;
+  color: $white;
+  font-family: "Inter", sans-serif;
+  margin-top: 25px;
+  @media screen and (max-width: 768px) {
+    margin-top: 15px;
+  }
+}
+.p-thin {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: $md-24;
+  line-height: $lh-45p;
+  color: $black;
+  @media screen and (max-width: 576px) {
+    font-size: $md-20;
+  }
+}
+.p1-body {
+  font-family: "Inter", sans-serif;
+  font-size: $md-24;
+  line-height: $lh-150;
+  font-weight: 500;
+  color: $black;
+}
+.p2-body {
+  font-family: "Inter", sans-serif;
+  font-size: $md-22;
+  line-height: $lh-135;
+  font-weight: 700;
+  color: $white;
+  @media screen and (max-width: 576px) {
+    font-size: $md-20;
+  }
+}
+.p3-body {
+  font-family: "Inter", sans-serif;
+  font-size: $md-25;
+  line-height: $lh-150;
+  color: $black;
+  @media screen and (max-width: 576px) {
+    font-size: $md-20;
+  }
+}
+.span {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  margin-right: 15px;
+  &::after {
+    content: "ly";
+    position: absolute;
+    color: $white;
+    font-size: $md-20;
+    line-height: $lh-135;
+    top: 10px;
+  }
+}
+.lang {
+  margin-bottom: 25px;
+}
+.fa-brands {
+  font-size: 75px;
+}

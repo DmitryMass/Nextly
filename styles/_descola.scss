@@ -1,0 +1,28 @@
+.section {
+  &-descola {
+    padding: 125px 0;
+    background: $orange;
+    @media screen and (max-width: 576px) {
+      padding: 80px 0 50px 0;
+    }
+  }
+}
+.descola {
+  &-about {
+    max-width: 435px;
+    @media screen and (max-width: 576px) {
+      text-align: center;
+    }
+    & > .p2-body {
+      font-weight: normal;
+    }
+  }
+  &-obj {
+    margin-bottom: 25px;
+  }
+  &-img {
+    & > img {
+      width: 100%;
+    }
+  }
+}
